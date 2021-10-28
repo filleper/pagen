@@ -1,0 +1,3359 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Arbetsmiljöfrågor</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="bootstrap.min.css"/>
+  <link rel="stylesheet" href="mdb.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+  <!-- Navbar and content -->
+    <div class="container-fluid bg-white">
+      <div class="row">
+
+        <!-- A vertical navbar -->
+        <div class="col-3" id="sticky-sidebar">
+          <div class="sticky-top">
+
+              <!-- Links -->
+              <div class="form-group">
+                <h2>Risker</h2>                
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk1" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk1">1. Åtgärder mot risk för fall till lägre nivå där nivåskillnaden är två meter eller mer</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk2" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk2">2. Åtgärder mot risk för att begravas under jordmassor eller sjunka ner i lös mark</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk3" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk3">3. Åtgärder mot exponering för kemiska och biologiska ämnen</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk4" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk4">4. Åtgärder mot exponering för joniserande strålning</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk5" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk5">5. Åtgärder mot risk vid arbete i närheten av högspänningsledning</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk6" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk6">6. Åtgärder vid arbete med risk för drunkning</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk7" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk7">7. Åtgärder vid arbete i brunnar eller tunnlar samt anläggningsarbete under jord</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk8" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk8">8. Åtgärder vid dykeriarbete</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk9" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk9">9. Åtgärder vid arbete i kassun</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk10" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk10">10. Åtgärder vid sprängningsarbete</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk11" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk11">11. Åtgärder vid arbete med tunga element</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk12" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk12">12. Åtgärder vid passerande fordonstrafik</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk13" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk13">13. Åtgärder vid rivningsarbeten</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk14" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk14">14. Arbete på arbetsställe som är gemensamt med pågående ordinarie verksamhet</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk15" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk15">15. Eventuell ytterligare risk</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk16" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk16">16. Eventuell ytterligare risk</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk17" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk17">17. ATEX-direktiven</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk18" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk18">18. Arbetstillstånd</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk19" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk19">19. Utrymningsinstruktion Malmö</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk20" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk20">20. Utrymningsinstruktion Lilla Harrie</label>
+                  </div>
+
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <input type="checkbox" class="btn-check" id="risk21" autocomplete="off" onclick="myFunction(this.id)">
+                    <label class="btn btn-custom col" for="risk21">21. Utrymningsinstruktion Göteborg</label>
+                  </div>
+              </div>
+
+          </div>
+        </div>
+
+        <!-- Utskriftsrutan -->
+        <div class="col-6 main container" id="main">
+          <!-- Header -->
+
+          <div class="container col bg-white d-flex align-items-center">
+
+              <div class="col-3">
+                <img src="pagen.png" style="width: 180px; height: 100%;">
+              </div>
+
+              <div class="col-6 text-center">
+                <H1>Arbetsmiljöplan</H1>
+              </div>
+          </div>
+
+          <!-- Rutor för arbetsmiljöplanen -->
+          <h2>Arbetsmiljöplan</h2>
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Projektnamn</th>
+                  <th class="col-8">Beskrivning av projektet samt entreprenadform</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="Projektnamn"></td>
+                  <td class="col-8"><input type="text" id="A" placeholder="Beskrivning av projektet samt entreprenadform"></td>
+                </tr>
+              </tbody>
+
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Byggherre</th>
+                  <th class="col-8">Kontaktperson</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="Företagsnamn och org.nr"></td>
+                  <td class="col-8"><input type="text" id="A" placeholder="Namn, telefonnummer och mailadress"></td>
+                </tr>
+              </tbody>
+
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Bas-P</th>
+                  <th class="col-8">Kontaktperson</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="Företagsnamn och org.nr"></td>
+                  <td class="col-8"><input type="text" id="A" placeholder="Namn, telefonnummer och mailadress"></td>
+                </tr>
+              </tbody>
+
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Bas-U</th>
+                  <th class="col-8">Kontaktperson</th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="Företagsnamn och org.nr"></td>
+                  <td class="col-8"><input type="text" id="A" placeholder="Namn, telefonnummer och mailadress"></td>
+                </tr>
+              </tbody>
+
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-12">Vid överlåtelse av arbetsmiljöansvaret till en s.k. Uppdragstagare enligt 3 kap 7c§ arbetsmiljölagen</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="Företagsnamn och org.nr"></td>
+                  <td class="col-8"><input type="text" id="A" placeholder="Namn, telefonnummer och mailadress"></td>
+                </tr>
+              </tbody>
+
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-12">BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-2">Från</td>
+                  <td class="col-4"><input type="date" id="A"></td>
+                  <td class="col-2">Till</td>
+                  <td class="col-4"><input type="date" id="A"></td>
+                </tr>
+              </tbody>
+            </table> 
+        
+          <h3>Denna arbetsmiljöplan upprättades av byggeherren/BAS-P</h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-2">Datum</th>
+                  <th class="col-5">BAS-P <br> Namn och Namnteckning</th>
+                  <th class="col-5">Byggherre/Uppdragstagare <br> Namn och namnteckning</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-2"><input type="date" id="A"></td>
+                  <td class="col-5"><input type="text" id="A" placeholder="Namn och namnteckning"></td>
+                  <td class="col-5"><input type="text" id="A" placeholder="Namn och namnteckning"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          <h3>Revisionshistorik, BAS-P</h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-2">Datum</th>
+                  <th class="col-4">Komplettering/ändring av planen</th>
+                  <th class="col-3">Ev. ny utsedd BAS-P <br> Företag eller handläggare</th>
+                  <th class="col-3">Signatur BAS-P</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-2"><input type="date" id="A"></td>
+                  <td class="col-4"><input type="text" id="A"></td>
+                  <td class="col-3"><input type="text" id="A"></td>
+                  <td class="col-3"><input type="text" id="A"></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col-2"><input type="date" id="A"></td>
+                  <td class="col-4"><input type="text" id="A"></td>
+                  <td class="col-3"><input type="text" id="A"></td>
+                  <td class="col-3"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          <h3>Denna arbetsmiljöplan överlämnades till BAS-U</h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-2">Datum</th>
+                  <th class="col-5">BAS-U <br> Namn och Namnteckning</th>
+                  <th class="col-5">Byggherre/Uppdragstagare <br> Namn och namnteckning</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-2"><input type="date" id="A"></td>
+                  <td class="col-5"><input type="text"  id="A" placeholder="Namn och namnteckning"></td>
+                  <td class="col-5"><input type="text"  id="A" placeholder="Namn och namnteckning"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          <h3>Revisionshistorik, BAS-U</h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-2">Datum</th>
+                  <th class="col-4">Komplettering/ändring av planen</th>
+                  <th class="col-3">Ev. ny utsedd BAS-U <br> Företag eller handläggare</th>
+                  <th class="col-3">Signatur BAS-P</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-2"><input type="date" id="A"></td>
+                  <td class="col-4"><input type="text" id="A"></td>
+                  <td class="col-3"><input type="text" id="A"></td>
+                  <td class="col-3"><input type="text" id="A"></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col-2"><input type="date" id="A"></td>
+                  <td class="col-4"><input type="text" id="A"></td>
+                  <td class="col-3"><input type="text" id="A"></td>
+                  <td class="col-3"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+      
+        <!-- Rutor för arbetsmiljöorganisation -->
+        <h2 style="page-break-inside:avoid;page-break-before:always;">Arbetsmiljöorganisation</h2>
+
+        <h3>Byggarbetsmiljösamordnare för planering och projektering "BAS-P"</h3>
+          <table class="table table-bordered">
+            <thead>
+              <tr class="d-flex">
+                <th class="col-4">BAS-P företagsnamn</th>
+                <th class="col-8">Kontaktperson för BAS-P handläggaren/handläggarna</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="d-flex">
+                <td class="col-4"><input type="text" id="A" placeholder="Pågen AB"></td>
+                <td class="col-8"><input type="text" id="A" placeholder="Namn, telefonnummer och mailadress"></td>
+              </tr>
+              <tr class="d-flex">
+                <td class="col-4"><input type="text" id="A" placeholder="Pågen AB"></td>
+                <td class="col-8"><input type="text" id="A" placeholder="Namn, telefonnummer och mailadress"></td>
+              </tr>
+              <tr class="d-flex">
+                <td class="col-4"><input type="text" id="A" placeholder="Pågen AB"></td>
+                <td class="col-8"><input type="text" id="A" placeholder="Namn, telefonnummer och mailadress"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        <h3>Byggarbetsmiljösamordnare för utförandet "BAS-U"</h3>
+          <table class="table table-bordered">
+            <thead>
+              <tr class="d-flex">
+                <th class="col-12">BAS-U företagsnamn</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="d-flex">
+                <td class="col-12"><input type="text" id="A" placeholder="Pågen AB"></td>
+              </tr>
+            </tbody>
+
+            <thead>
+              <tr class="d-flex">
+                <th class="col-12">Kontaktperson för BAS-U handläggaren/handläggarna</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="d-flex">
+                <td class="col-12"><input type="text" id="A" placeholder="Namn, telefonnummer och mailadress"></td>
+              </tr>
+            </tbody>
+
+            <thead>
+              <tr class="d-flex">
+                <th class="col-12">Kontaktperson för BAS-U handläggaren/handläggarna</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="d-flex">
+                <td class="col-12"><input type="text" id="A" placeholder="Namn, telefonnummer och mailadress"></td>
+              </tr>
+            </tbody>
+
+            <thead>
+              <tr class="d-flex">
+                <th class="col-12">Kontaktperson för BAS-U handläggaren/handläggarna</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="d-flex">
+                <td class="col-12"><input type="text" id="A" placeholder="Namn, telefonnummer och mailadress"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        <h3>Arbete på fast driftsställe – samordningsansvarig för ordinarie drift</h3>
+          <table class="table table-bordered">
+            <thead>
+              <tr class="d-flex">
+                <th class="col-6">Namn och företag</th>
+                <th class="col-6">Telefon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="d-flex">
+                <td class="col-6"><input type="text" id="A"></td>
+                <td class="col-6"><input type="text" id="A"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        <h3>Brandskyddsansvarig under byggtiden</h3>
+          <table class="table table-bordered">
+            <thead>
+              <tr class="d-flex">
+                <th class="col-6">Namn och företag</th>
+                <th class="col-6">Telefon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="d-flex">
+                <td class="col-6"><input type="text" id="A"></td>
+                <td class="col-6"><input type="text" id="A"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        <h3>Tillståndsansvarig Heta arbeten</h3>
+          <table class="table table-bordered">
+            <thead>
+              <tr class="d-flex">
+                <th class="col-6">Namn och företag</th>
+                <th class="col-6">Telefon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="d-flex">
+                <td class="col-6"><input type="text" id="A"></td>
+                <td class="col-6"><input type="text" id="A"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        <h3>Kontaktperson/er för beredskap och utrymning i händelse av olycka eller tillbud</h3>
+          <table class="table table-bordered">
+            <thead>
+              <tr class="d-flex">
+                <th class="col-6">Namn och företag</th>
+                <th class="col-6">Telefon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="d-flex">
+                <td class="col-6"><input type="text" id="A" placeholder="Person 1"></td>
+                <td class="col-6"><input type="text" id="A" placeholder="Person 1"></td>
+              </tr>
+              <tr class="d-flex">
+                <td class="col-6"><input type="text" id="A" placeholder="Person 2"></td>
+                <td class="col-6"><input type="text" id="A" placeholder="Person 2"></td>
+              </tr>
+              <tr class="d-flex">
+                <td class="col-6"><input type="text" id="A" placeholder="Person 3"></td>
+                <td class="col-6"><input type="text" id="A" placeholder="Person 3"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        <h3>Första hjälpen utbildade</h3>
+          <table class="table table-bordered">
+            <thead>
+              <tr class="d-flex">
+                <th class="col-6">Namn och företag</th>
+                <th class="col-6">Telefon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="d-flex">
+                <td class="col-6"><input type="text" id="A" placeholder="Person 1"></td>
+                <td class="col-6"><input type="text" id="A" placeholder="Person 1"></td>
+              </tr>
+              <tr class="d-flex">
+                <td class="col-6"><input type="text" id="A" placeholder="Person 2"></td>
+                <td class="col-6"><input type="text" id="A" placeholder="Person 2"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        <h3 style="page-break-inside:avoid;page-break-before:always;">Skyddsombud, även ev. utsett samordnande skyddsombud</h3>
+          <table class="table table-bordered">
+            <thead>
+              <tr class="d-flex">
+                <th class="col-6">Namn och företag</th>
+                <th class="col-6">Telefon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="d-flex">
+                <td class="col-6"><input type="text" id="A" placeholder="Person 1"></td>
+                <td class="col-6"><input type="text" id="A" placeholder="Person 1"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        <h3>Skyddsrond</h3>
+          <table class="table table-bordered">
+            <thead>
+              <tr class="d-flex">
+                <th class="col">På denna arbetsplats genomförs skyddsrond</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="d-flex">
+                <td class="col"><input type="text" id="A" placeholder="Ange tidsintervall, exempelvis tisdag varje vecka"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        <h2>Ordnings- och skyddsregler för arbetsplatsen</h2>
+
+        <h3>Ordning på arbetsplatsen</h3>
+          <p>God ordning ska gälla på arbetsplatsen. Detta skapar trivsel och framkomlighet och kan förhindra många olyckor.</p>
+            <ul>
+              <li>Vid ankomst till arbetsplatsen skall anmälan göras till platsledningen.</li>
+              <li>ID06 kort skall bäras synligt på arbetsplatsen, regler för ID06 skall följas.</li>
+              <li>Material ska läggas på anvisade platser. Kontrollera att transportvägar ej blir blockerade.</li>
+              <li>Respektive entreprenör städar arbetsplatsen efter slutfört arbetsmoment.</li>
+              <li>Ta hand om allt spillmaterial – fortlöpande, källsortera avfall.</li>
+              <li>Inom arbetsområdet får parkering ske endast vid anvisad plats.</li>
+              <li>Utrymningsvägar, förbindelseleder och transportvägar ska alltid hållas fria.</li>
+              <li>I personalutrymmen ska ordnings- och skötselföreskrifter noga efterlevas.</li>
+              <li>Ingrip om riskfyllt beteende observeras.</li>
+              <li>Rapportera alla tillbud, skador och säkerhetsbrister till din närmaste chef och till skyddsombudet.</li>
+            </ul>
+
+        <h3>Personlig skyddsutrustning</h3>
+          <p>Godkänd skyddshjälm och rätt klassad varselklädsel samt skyddsskor med spiktrampskydd och skyddståhätta ska alltid bäras av alla på arbetsplatsen. Ytterligare personlig skyddsutrustning ska användas i enlighet med aktuella riskbedömningar, arbetsberedningar, skyddsinstruktioner eller rutiner. Varje entreprenör ska – om inget annat har avtalats - tillhandhålla sina resp. egna arbetstagare individuellt anpassad skyddsutrustning enligt ovan, samt ev. särskilda skyddsanordningar som det egna arbetet därutöver kräver. De ska också se till att arbetstagarna använder skyddsutrustningen/anordningen och har nödvändig kompetens för detta, samt att den egna utrustningen/anordningen fortlöpande besiktigas och underhålls.</p>
+
+        <h3>Skyddsanordningar</h3>
+          <p>Innan ett arbete påbörjas ska man alltid kontrollera att erforderliga skyddsanordningar är korrekta och säkert utförda. Ett arbete kan innebära att man måste sätta upp en tillfällig avspärrning omkring arbetsplatsen för att förhindra att någon skadar sig. <strong><em>Observera</em> att om en skyddsanordning tas bort för att kunna utföra ett arbete, är det en skyldighet att återställa den.</strong> Om skyddsanordning ej omedelbart kan återställas ska detta rapporteras till arbetsledningen och BAS-U (Underlåtenhet eller slarv kan medföra straffpåföljd enligt AML kap.8 §2).</p>
+
+        <h3>Heta arbeten, brandfara och brandredskap</h3>
+          <p>Med Heta Arbeten avses främst svetsning och skärning, arbete med rondell, lödning samt arbeten med gaslågor för uppvärmning eller upptining. Inga Heta Arbeten får påbörjas utan den Tillståndsansvarige för brandskydd gjort kontroll och lämnat tillstånd. Tillse att Brandskyddsföreningens Säkerhetsregler för Heta Arbeten är uppfyllda. Man ska alltid meddela Tillståndsansvarig för brandskydd om man har för avsikt att använda brandfarlig vara. Man bör förvissa sig om var brandsläckare finns. Gas- och gasolflaskor ska, då de ej används, samlas till särskilt anvisad och varningsskyltad plats.</p>
+
+        <h3>Besiktnings-, kompetenskrav samt förarbevis för utrustning</h3>
+          <p>Grävmaskiner, kranar, lyftanordningar, hissar och liknande utrustningar eller fordon måste besiktigas med vissa tidsintervall. Utrustning eller fordon som saknar uppgift om godkänd besiktning eller har erhållit anmärkning i samband med besiktning får inte användas på arbetsplatsen. Besiktningsintyg ska uppvisas för BAS-U innan något arbete får påbörjas.</p>
+
+        <h3>Besiktningspliktiga maskiner och anordningar</h3>
+          <p>Grävmaskiner, kranar, lyftanordningar, hissar och liknande utrustningar eller fordon måste besiktigas med vissa tidsintervall. Utrustning eller fordon som saknar uppgift om godkänd besiktning eller har erhållit anmärkning i samband med besiktning får inte användas på arbetsplatsen. Besiktningsintyg ska uppvisas för BAS-U innan något arbete får påbörjas.</p>
+
+        <h3>Buller, damm, lukter och vibrationer</h3>
+          <p>Förutom olika arbeten i sig ger även fordonskörning inne på en arbetsplats upphov till damm. Åtgärder för att minska dammande arbeten, buller, störande lukter eller vibrationer ska vidtas av alla verksamma på arbetsplatsen. I första hand ska maskiner och arbetssätt väljas som ger så lite exponering som möjligt. I andra hand ska bullrande och dammande arbeten avskärmas samt individuella skydd användas mot damm, buller och vibrationer. Arbeten som skapar damm, buller och störande lukt, ska samordnas och planeras tillsammans med BAS-U för att minimera exponering av damm, buller och störande lukt för arbetande i angränsande områden.</p>
+
+        <h3>Rökning</h3>
+          <p>Rökning är endast tillåtet utomhus och på angiven plats.</p>
+
+        <h3>Elsäkerhet</h3>
+          <p>Endast behörig installatör får göra ingrepp i elanläggningen - tillfällig eller permanent. Endast byte av säkringar får utföras av övrig personal. Var rädd om kablarna - de skadas lätt. Låt ej kablar ligga oskyddade där skaderisk föreligger. Skadade elkablar får under inga omständigheter användas. Om skada på elkabel upptäcks - underrätta genast arbetsledningen. Vid arbeten som kan medföra kontakt med befintliga ledningar t.ex. schakt och grävarbeten, borrning och rivning, samråd alltid med BAS-U angående arbetsområdens aktuella ledningar.</p>
+
+        <h3 style="page-break-inside:avoid;page-break-before:always;">Ergonomi</h3>
+          <p>Risker för att få besvär i muskler, leder och skelett uppstår framför allt när arbetet innebär påfrestande arbetsställningar och arbetsrörelser, manuell hantering eller upprepat arbete. Organisatoriska förhållanden, till exempel tidspress, starkt styrt arbete och otillräcklig tid för återhämtning, kan också bidra till belastningsbesvär. Därför är det viktigt att alla arbeten på arbetsplatsen är planerade och utformade så att de kan utföras så skonsamt som möjligt, genom att bl.a. arbetsutrymmen är tillräckliga, att erforderliga tekniska hjälpmedel finns att tillgå, att möjlighet till arbetsrotation och återhämtning finns samt att arbetstagarna har tillräckliga kunskaper om arbetsteknik och hjälpmedel för att undvika risker för belastningsskador. Material och utrustning ska väljas utifrån att det ger bästa möjliga arbetsmiljöförhållanden såsom hanterbarhet, vikt, transportmöjlighet, möjlig användning av hjälpmedel etc.</p>
+
+        <h3>Kemiska produkter och farliga ämnen</h3>
+          <p>Hos BAS-U finns en pärm med säkerhetsdatablad/varuinformationsblad över alla kemiska produkter som används på arbetsplatsen. Under- och sidoentreprenörer ska till BAS-U överlämna säkerhetsdatablad/varuinformationsblad över de kemiska produkter som hanteras av dem på arbetsplatsen. Om farliga ämnen måste användas – tillse att information finns om vilka risker som varje ämne kan medföra och vilka skyddsåtgärder som behöver vidtagas. Vid misstanke om förekomst av farliga material som ej finns dokumenterade (PCB, asbest, m.m.) skall platsledningen omedelbart kontaktas.</p>
+
+        <h3>Under-/sidoentreprenör (UE/SE)</h3>
+          <p>Samtliga UE/SE ska tillse att innehållet i arbetsmiljöplanen och dessa ordnings- och skyddsregler har förmedlats till de egna arbetstagarna på sådant sätt att var och en har förstått dem. Om det behövs ska UE/SE ombesörja med översättning eller tolkservice utifrån det språk som det egna arbetstagarna förstår. Respektive UE/SE har som arbetsgivare för sina egna arbetstagare, inklusive ev. inhyrd personal, ett eget ansvar för att den egna organisationen har ett fungerande systematiskt arbetsmiljöarbete. Detta innebär att resp. UE/SE ansvarar för att bl.a. göra riskbedömningar och arbetsberedningar för sina egna arbeten, informera sina arbetstagare inklusive inhyrd personal om riskerna i arbetet och utbilda dem så att de vet hur de ska skydda sig mot riskerna, introducera all nytillkommen personal i arbetet samt samverka i arbetsmiljöarbetet med skyddsombud och andra arbetstagarrepresentanter. Varje UE/SE ska lämna sina riskbedömningar för egna arbeten till BAS-U. Förskjutning och/eller inarbetning av arbetstid får ej ske utan överenskommelse med BAS-U.</p>
+
+        <h3>Beredskap vid olycka</h3>
+          <p>Beredskapsplan att följa vid olycka är informerad till samtliga på arbetsplatsen och finns anslagen/utdelad. Rutin för nödlägesberedskap finns på platskontoret.</p>
+
+        <h3>Fallrisker</h3>
+          <p>Endast behörig personal får bygga, väsentligt förändra och flytta byggnadsställning. Vid risk för fallskador ska risken i första hand minskas genom skyddsräcken, skyddstäckningar eller andra tekniska skyddslösningar. I andra hand ska exempelvis skyddsnät eller annat kollektivt skydd användas och i sista hand används personlig fallskyddsutrustning. Arbete med fallskyddsutrustning får aldrig utföras som ett ensamarbete. En plan för räddningsinsats ska upprättas innan arbete påbörjas. Vid användning av mobil arbetsplattform ex. bomlift och saxlift är personlig fallskyddsutrustning obligatorisk. Alla personer i liften ska vara förankrade i definierad förankringspunkt. Arbete från stegar får endast ske undantagsvis och då under förutsättning att riskerna bedöms så små att användning av annan säkrare utrustning inte är befogad.</p>
+
+        <h3>Lyft</h3>
+          <p>Lastkopplare och signalman skall kunna uppvisa intyg för Säkra lyft. Det råder förbud mot lyft över områden som inte är säkrade mot att personer kan uppehålla sig där. Det är viktigt att alla som är inblandade i lyftet kan kommunicera med varandra. Lyftanordningar och lyftredskap skall kontrolleras dagligen. En särskild lyftsamordnare skall utses i samband med extra riskfyllda lyftoperationer.</p>
+
+        <h3>Alkohol och droger</h3>
+          <p>Alkohol och droger får inte förekomma på arbetsplatsen. Påverkade personer ska omedelbart avlägsnas från arbetsplatsen, respektive arbetsgivare ansvarar för att hemkomsten säkerställs.</p>
+
+        <h3>Psykosocial arbetsmiljö</h3>
+          <p>Mobbing, diskriminering och annat kränkande beteende får inte förekomma på arbetsplatsen. Här bryr vi oss om varandra och är därför måna om hur vi beter oss mot varandra.</p>
+
+        <h3>Minderåriga/APL</h3>
+          <p>Innan en minderårig person anlitas för att utföras arbete på arbetsplatsen ska det för henne/honom finnas en särskild utsedd handledare som ska gjort, och för BAS-U, uppvisat en särskild riskbedömning för den minderårige utifrån hennes/hans psykiska och fysiska förutsättningar att kunna utföra arbete på säkert sätt. Handledaren ska också kunna visa att den minderårige har fått den utbildning och de instruktioner som krävs för att kunna hantera en viss maskin eller ett visst verktyg säkert.</p>
+
+        <h3>Uppmärksamhet</h3>
+          <p>Ljudanläggningar (radio, hörselkåpor med radio, mp3- spelare eller motsvarande) får endast användas efter godkännande av platsledningen.</p>
+
+        <h3>Disciplinära åtgärder</h3>
+          <p>Den som bryter mot dessa regler riskerar att bli avvisad från arbetsplatsen och kan drabbas av arbetsrättsliga sanktioner.</p>
+
+        <div class="card" id="OBS">
+          <div class="card-body rounded">
+            <strong class="card-title">OBS! Tänk på att sanktionsavgift kan komma att påföras respektive arbetsgivare vid bl.a.</strong>
+              <p><ul>
+                <li>Brott mot Arbetsmiljöverkets föreskrifter om ställningar (AFS 2013:4) avseende krav på dokumentation att de arbetstagare som uppför och/eller monterar ned ställningar och väderskydd har genomgått erforderlig utbildning för detta.</li>
+                <li>Brott mot Arbetsmiljöverkets föreskrifter om besiktning av lyftanordningar och vissa andra tekniska anordningar (AFS 2014:16) avseende krav på godkänd besiktning samt giltigt besiktningsintyg vid användning av dessa anordningar.</li>
+                <li>Brott mot Arbetsmiljöverkets föreskrifter om byggnads- och anläggningsarbete (AFS 2014:26) avseende krav på användning och utformning av fallskydd vid arbete där det finns risk för fall och fallhöjden är mer än två meter.</li>
+                <li>Brott mot Arbetsmiljöverkets föreskrifter om asbest (AFS 2014:27) avseende krav på bl a Arbetsmiljöverkets tillstånd för hantering av asbest samt giltigt utbildningsbevis för den som leder och utför arbete med asbesthaltigt material.</li>
+                <li>Brott mot Arbetsmiljöverkets föreskrifter om användning av truckar (AFS 2014:20) avseende krav på skriftligt tillstånd från arbetsgivaren för att få använda truck.</li>
+                <li>Brott mot Arbetsmiljöverkets föreskrifter om medicinska kontroller i arbetslivet (AFS 2014:23) avseende krav på tjänstbarhetsintyg för t ex arbete med asbest.</li>
+              </p></ul>
+          </div>
+        </div>
+          
+          <!-- Risk 1-->
+          <div class="container bg-white child" id="risk1_text" style="display:none;">
+            <h2>1. Åtgärder mot risk för fall till lägre nivå där nivåskillnaden är två meter eller mer</h2>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8 h-auto"><input type="text" id="A" placeholder="Exempel på var det finns fallrisker: Takarbete, fasadarbete, från stege, håligheter i till exempel bjälklag eller mark, montering av prefab, schaktkant, bergarbete."></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1981:14, AFS 1999:3, AFS 2001:3, AFS 2004:3, AFS 2013:4, H 456, ADI 511, ADI 512, ADI 539, ADI 583 samt Arbetsmiljöverkets informationssida på internet, samt Arbetsmiljöverkets informationssida om ställningar.</em></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card" id="OBS">
+              <div class="card-body border rounded">
+                <strong class="card-title">Vid fallrisker ska i första hand fasta skyddsanordningar användas. Exempel på fasta skyddsanordningar:</strong>
+                  <p><ul>
+                    <li>Fallskyddsräcken</li>
+                    <li>Ställningar</li>
+                    <li>Arbetsplattformar och arbetskorgar</li>
+                    <li>Skyddsnät</li>
+                  </ul></p>
+                  <p><em>Personlig fallskyddsutrustning får bara användas i undantagsfall om fasta skydd inte är möjliga att använda, eller där tiden för att få de fasta skydden på plats tar betydligt längre tid än vad det tar att utföra det aktuella arbetet.</em></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förberedande åtgärder med anledning av valda produktionsmetoder och material</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    <p>Ej aktuellt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                  <label class="form-check-label" for="defaultCheck2">
+                    <p>Prefabricerade byggdelar används.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                  <label class="form-check-label" for="defaultCheck3">
+                    <p>Fönster är förmonterade i väggelementen.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                  <label class="form-check-label" for="defaultCheck4">
+                    <p>Infästningar har förberetts i fasad för ställning.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                  <label class="form-check-label" for="defaultCheck5">
+                    <p>Infästningar har förberetts för skyddsräcken vid bjälklag, tak, schakt, trapphus.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                  <label class="form-check-label" for="defaultCheck6">
+                    <p>Infästningar har förberetts på tak och vid bjälklagskant för användning av personlig fallskyddsutrustning</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Arbete från arbetsplattformar och arbetskorgar (t.ex. skylift)</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                  <label class="form-check-label" for="defaultCheck7">
+                    <p>Arbete från arbetsplattformar och arbetskorgar förekommer ej.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+                  <label class="form-check-label" for="defaultCheck8">
+                    <p>Liftutbildning för den som leder och den som utför personlyftet.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+                  <label class="form-check-label" for="defaultCheck9">
+                    <p>Arbetsplattformar och arbetskorgar skall besiktigas och godkännas innan de får tas i bruk.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                  <label class="form-check-label" for="defaultCheck10">
+                    <p>Arbetsplattform ska väljas som är anpassad för befintligt underlag. Erforderliga stöd ska användas för arbetsplattformen.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                  <label class="form-check-label" for="defaultCheck11">
+                    <p>Arbetsplattform och arbetskorg ska kontrolleras dagligen av behörig person.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+                  <label class="form-check-label" for="defaultCheck12">
+                    <p>Underlag för arbetsplattformar ska kontrolleras avseende stabilitet, lutning och ojämnhet innan arbete påbörjas. Vid användning av arbetsplattform ska även omkringliggande risker runt arbetsplattformens användningsområde riskbedömas mot t.ex. påkörning, klämningar eller elsäkerhet.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
+                  <label class="form-check-label" for="defaultCheck13">
+                    <p>Vid arbete från arbetsplattform och arbetskorg skall säkerhetslina användas och påkörningsskydd finnas på plats. Se räddningsplan vid användning av sele och säkerhetslina för närmare instruktioner.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Arbete från stege</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
+                  <label class="form-check-label" for="defaultCheck14">
+                    <p>Arbete från stege förekommer ej.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck15">
+                  <label class="form-check-label" for="defaultCheck15">
+                    <p>Förbud mot arbete från stege råder. Ställning eller lift skall användas.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck16">
+                  <label class="form-check-label" for="defaultCheck16">
+                    <p>Arbete från stege utan personlig fallskyddsutrustning är tillåten, dock endast för enstaka arbeten som tar mindre än 15 minuter att utföra och som kan utföras med en hand och den andra handen kan hålla i stegen, samt om stegen kortare än 5 meter och nivåskillnaden understiger 4 meter.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Arbete från ställning</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck17">
+                  <label class="form-check-label" for="defaultCheck17">
+                    <p>Arbete från ställning förekommer ej.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck18">
+                  <label class="form-check-label" for="defaultCheck18">
+                    <p>Den planerade ställningen är utformad så att den passar för arbetet.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck19">
+                  <label class="form-check-label" for="defaultCheck19">
+                    <p>Vald prefabricerad ställning är typkontrollerad, ev. rörställning uppförs enligt typfallen – dokumentation samt instruktioner är lämnade till BAS-U.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck20">
+                  <label class="form-check-label" for="defaultCheck20">
+                    <p>Endast entreprenörer med behörig ställningsutbildning anlitas i projektet för montering, demontering eller ändring av ställningar på arbetsplatsen. Dessa ska uppvisa sina utbildningsintyg för BAS-U innan ställning monteras, demonteras eller ändras.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck21">
+                  <label class="form-check-label" for="defaultCheck21">
+                    <p>Innan ställning tas i bruk görs en besiktning av och överlämning till BAS-U. Dokumentation på att ställningen är korrekt utförd finns, liksom dokumentation på att den är lämplig för arbetet. Kopior har lämnats till BAS-U.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck22">
+                  <label class="form-check-label" for="defaultCheck22">
+                    <p>Varje respektive entreprenör som använder en ställning ska innan ställningen används och därefter löpande under användningstiden kontrollera ställningens skick och rapportera ev. brister till BAS-U.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck23">
+                  <label class="form-check-label" for="defaultCheck23">
+                    <p>Alla hjul på en rullställning låses innan arbete påbörjas.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck24">
+                  <label class="form-check-label" for="defaultCheck24">
+                    <p>Skyddsräcken ska vara hållfasta, tillräckligt höga, och ha minst överledare, en mellanledare och fotlist. Särskilt vid takfot måste ställning och räcke vara anpassat till taklutning och typ av arbete så att risken för fall är ordentligt förebyggd. Avstånd mellan bomlag och fasad ska understiga 30 cm. Trappor ska finnas som tillträdesleder till och inom ställning.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck25">
+                  <label class="form-check-label" for="defaultCheck25">
+                    <p>Se skydds- och ordningsregler avseende ev tillfälligt borttagande av skyddsräcke och ställningsplan.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck26">
+                  <label class="form-check-label" for="defaultCheck26">
+                    <p>Extra täta skyddsronder för kontroll av ställning genomförs av BAS-U med <input type="text" placeholder="XX" style="width: 30px;"> meter intervall.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">  
+                <h3>Schakt och öppningar</h3>
+                  <p>Schakt samt öppningar i fasad och bjälklag, samt mark- / ledningsschakt och brunnar ska förses med hållfast och tydligt markerad/skyltad skyddsanordning mot fall och snubbling, t ex skyddsräcke, avspärrning eller täckning.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck27">
+                  <label class="form-check-label" for="defaultCheck27">
+                    <p>Vald skyddsanordning är angivna nedan.</p>
+                  </label>
+                  <div class="form-group">
+                    <textarea class="form-control col" rows="3" placeholder="Ange skyddsanordning" style="font-size: 9pt;"></textarea>
+                  </div>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck28">
+                  <label class="form-check-label" for="defaultCheck28">
+                    <p>Minst 2 m skyddsavstånd om personlig fallskyddsutrustning inte används.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">  
+                <h3>Användning av personlig fallskyddsutrustning</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck29">
+                  <label class="form-check-label" for="defaultCheck29">
+                    <p>Användning av personlig fallskyddsutrustning förekommer ej.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck30">
+                  <label class="form-check-label" for="defaultCheck30">
+                    <p>Personlig fallskyddsutrustning får användas som ett sistahandsval, dock endast under följande förutsättningar.</p>
+                  </label>
+                </div>
+                <p><ul>
+                  <li>Utrustningen ska vara personligt anpassad, användas av personal med utbildning och vara kontrollerad av behörig person. Dokumentation ska finnas om besiktning av utrustningen.</li>
+                  <li>Utrustningen ska bromsa och stoppa ett fall samt förhindra riskfylld pendling.</li>
+                  <li>Utrustningen ska bestå av en helsele, ett kopplingssystem med falldämpande funktion och en förankringsanordning. Det finns fyra olika kopplingssystem med falldämpande funktion att använda till helsele: Falldämparlina, Säkerhetsblock med funktion som dämpar ett fall, Styrt glidlås på fast förankrad lina eller skena eller Styrt glidlås på flexibel förankringslina.</li>
+                  <li>Utrustningen ska ha rätt linor/vajer som t ex tåler vassa kanter.</li>
+                  <li>Planerade förankringspunkter ska vara kontrollerade och godkända och tåla förekommande laster.</li>
+                  <li>Arbete när personlig fallskyddsutrustning används får aldrig utföras ensamt. Snabb hjälp inom 10-15 min måste alltid finnas till hands om någon kan bli hängande i sele.</li>
+                  <li>En räddningsplan med instruktioner om snabb hjälp för någon som kan bli hängande i sele måste finnas upprättad innan arbetet påbörjas. Räddningsledaren för en räddningsinsats ska ha specifik utbildning.</li>
+                </ul></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Takarbete (skyddsåtgärder utöver ovanstående)</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck31">
+                  <label class="form-check-label" for="defaultCheck31">
+                    <p>Inga ytterligare skyddsåtgärder är aktuella för takarbete.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck32">
+                  <label class="form-check-label" for="defaultCheck32">
+                    <p>Dubbla säkerhetsanordningar ska användas vid brant taklutning (exempelvis personlig fallskyddsutrustning och takskydd).</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck33">
+                  <label class="form-check-label" for="defaultCheck33">
+                    <p>Utred behovet av och om möjligt montera horisontellt arbetsplan på lutande tak.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck34">
+                  <label class="form-check-label" for="defaultCheck34">
+                    <p>Takarbete avbryts vid olämpliga väderleksförhållanden (kraftig vind, snöfall, regn, is/snö på tak).</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck35">
+                  <label class="form-check-label" for="defaultCheck35">
+                    <p>Innan takarbete påbörjas skall takets beskaffenhet gällande bärighet och ytsträvhet kontrolleras.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck36">
+                  <label class="form-check-label" for="defaultCheck36">
+                    <p>Material och verktyg på taket ska läggas så att de inte kan glida ned. Material ska om det behövs fastgöras på lämpligt sätt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck37">
+                  <label class="form-check-label" for="defaultCheck37">
+                    <p>Möjlighet ska finnas till löpande förankring av personlig fallskyddsutrustning vid förflyttning på taket.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+    
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+
+          <!-- Risk 2-->
+          <div class="container bg-white child" id="risk2_text" style="display:none;">
+            <h2>2. Åtgärder mot risk för att begravas under jordmassor eller sjunka ner i lös mark</h2>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8 h-auto"><input type="text" id="A" placeholder="Tillexempel risker vid hantering av jordmassor (schaktning, pålning, tippning/flytt av jordmassor)."></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1981:15, AFS 1999:3, ADI 539 samt Arbetsmiljöverkets informationssida på internet.</em></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förundersökningar</h3>
+                <p>Geoteknisk undersökning har genomförts och finns på platskontoret.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck38">
+                  <label class="form-check-label" for="defaultCheck38">
+                    <p>Djup till grundvattenyta har undersökts.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck39">
+                  <label class="form-check-label" for="defaultCheck39">
+                    <p>Inga schakt utförs djupare än vad geoteknisk undersökning föreskriver som maximalt schaktdjup.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Transporter och upplag</h3>
+                <p>Transportleder är utförda och markerade på ett sådant sätt att schakt ej påverkas och påkörningsrisk ej föreligger.<br>
+                  Hårdgjort eller på annat sätt förstärkt underlag används för transport av tunga fordon och utrustning till och från schakt.<br>
+                  Upplag av jordmassor görs på behörigt avstånd från schakt, avståndet ska vara <input type="text" placeholder="XX" style="width: 30px;"> meter.<br>
+                  Avkörningsskydd ska finnas som hindrar fordon från att störta ner i schakt.<br>
+                  Säkra tillträdesleder finns till/från schakt för personal. Ska normalt utgöras av trappor.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck40">
+                  <label class="form-check-label" for="defaultCheck40">
+                    <p>Om körning med lastbil med släp förekommer, används vid behov ledsagare.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Arbete - metoder och utrustning</h3>
+                <p>Följande person, med kontaktuppgifter som anges nedan, har utsetts till schaktansvarig.</p>
+                  <div class="input-group" style="margin-top: -9px; margin-bottom: 5px;">
+                    <input type="text" class="form-control col-4" placeholder="Ange företagets namn">
+                    <input type="text" class="form-control col-8" placeholder="Ange namn och telefonnummer till företagets kontaktperson på arbetsplatsen">
+                  </div>
+                <p>Vid rasrisk ska anordning för avspärrning vara tydligt och varaktigt märkt.<br>
+                Kant, stup eller annan nivåskillnad där risk finns för att fordon, personal eller tredje person kan falla ned ska vara försedd med skyddsanordning eller avspärrning.</p>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck41">
+                  <label class="form-check-label" for="defaultCheck41">
+                    <p>Kompetensbevis för schaktansvarig ska kunna uppvisas för BAS-U (BAM/Startkurs Arbetsmiljö, utbildningen ”Schakta Säkert” eller motsvarande).</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck42">
+                  <label class="form-check-label" for="defaultCheck42">
+                    <p>Släntlutningar är bestämda utifrån geoteknisk undersökning och i samråd med geotekniker.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck43">
+                  <label class="form-check-label" for="defaultCheck43">
+                    <p>Särskild arbetsberedning och egenkontroll görs i enlighet med ”Schakta Säkert” eller motsv. utbildning.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck44">
+                  <label class="form-check-label" for="defaultCheck44">
+                    <p>Stödkonstruktioner/rasskyddssystem används i schakt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck45">
+                  <label class="form-check-label" for="defaultCheck45">
+                    <p>Det råder förbud mot ensamarbete i schakt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck46">
+                  <label class="form-check-label" for="defaultCheck46">
+                    <p>Vid behov tas beslut om eventuellt förbud mot ensamarbete i schakt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck47">
+                  <label class="form-check-label" for="defaultCheck47">
+                    <p>Om möjligt, inga schakt utförs djupare än 1,5 meter.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck48">
+                  <label class="form-check-label" for="defaultCheck48">
+                    <p>Schaktning och hålgrävning – egenkontroll inför produktionsstart samt daglig kontroll genomförs i syfte att upptäcka förändringar på grund av belastning, vibrationer, fuktighetsgrad, väderlek etc.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck49">
+                  <label class="form-check-label" for="defaultCheck49">
+                    <p>Länshållning för vatten av schaktgropar (djup till grundvattenyta har undersökts).</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck50">
+                  <label class="form-check-label" for="defaultCheck50">
+                    <p>Särskild arbetsberedning och egenkontroll görs vid spontning.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+    
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <!-- Risk 3-->
+          <div class="container bg-white child" id="risk3_text" style="display:none;">
+            <h2>3. Åtgärder mot exponering för kemiska och biologiska ämnen</h2>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8 h-auto"><input type="text" id="A" placeholder="Tillexempel risker vid hantering av jordmassor (schaktning, pålning, tippning/flytt av jordmassor)."></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1992:16, AFS 1999:3, AFS 2005:6, AFS 2006:1, AFS 2014:43, ADI 296 samt Arbetsmiljöverkets informationssida på internet.</em></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card" id="OBS">
+              <div class="card-body border rounded">
+                <strong class="card-title">Viktigt att tänka på avseende asbest, PCB och härdplaster:</strong>
+                  <p><ul>
+                    <li>Asbesthaltigt material får endast rivas, hanteras och transporteras av personal från behörigt företag som har tillstånd från Arbetsmiljöverket.</li>
+                    <li>PCB haltigt material får endast rivas, hanteras och transporteras av personal från behörigt företag.</li>
+                    <li>Personal som arbetar med härdplaster måste genomgått den utbildning som krävs för arbetet.</li>
+                  </ul></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förundersökningar</h3>
+                <p>Vilka kemiska och/eller biologiska ämnen som förekommer på arbetsplatsen har undersökts, samt var och i vilken omfattning de förekommer. Denna inventering finns på platskontoret. Alternativ som innebär utesluten eller reducerad användning av kemiska ämnen har undersökts.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck51">
+                  <label class="form-check-label" for="defaultCheck51">
+                    <p>Vattenlås har undersökts avseende förekomst av kvicksilver eller biologiskt restmaterial.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Arbete - metoder och utrustning</h3>
+                <p>Byggmaterial innehållande farliga kemiska eller biologiska ämnen märks upp tydligt i avvaktan på rivning. Placering/uppställningsplats för utrustning som kan sprida hälsovådliga ämnen (spilltråg vid behov, ev gasolflaskor förvaras separat från kemikalier och brandfarliga ämnen) Det finns dokumenterade rutiner för vilka typer av skyddsutrustning som skall användas för olika arbetsmoment.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Asbest</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck52">
+                  <label class="form-check-label" for="defaultCheck52">
+                    <p>Arbete med asbesthaltigt material förekommer ej.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck53">
+                  <label class="form-check-label" for="defaultCheck53">
+                    <p>Asbesthaltigt material får endast rivas, hanteras och transporteras av personal från behörigt företag som har tillstånd från Arbetsmiljöverket. Kopia av detta tillstånd med tillhörande bilagor/dokumentation ska finnas på platskontoret.</p>
+                  </label>
+                </div>
+                <div class="input-group">
+                  <input type="text" class="form-control col-4" placeholder="Ange företagets namn">
+                  <input type="text" class="form-control col-8" placeholder="Ange namn och telefonnummer till företagets kontaktperson på arbetsplatsen">
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>PCB</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck54">
+                  <label class="form-check-label" for="defaultCheck54">
+                    <p>Arbete med PCB-haltigt material förekommer ej.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck55">
+                  <label class="form-check-label" for="defaultCheck55">
+                    <p>PCB-haltigt material får endast rivas, hanteras och transporteras av personal från behörigt företag.</p>
+                  </label>
+                </div>
+                <div class="input-group">
+                  <input type="text" class="form-control col-4" placeholder="Ange företagets namn">
+                  <input type="text" class="form-control col-8" placeholder="Ange namn och telefonnummer till företagets kontaktperson på arbetsplatsen">
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Kvarts</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck56">
+                  <label class="form-check-label" for="defaultCheck56">
+                    <p>Arbete som utsätter personer för kvartsdamm förekommer ej.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck57">
+                  <label class="form-check-label" for="defaultCheck57">
+                    <p>Den tekniska utrustningen som används vid hanteringen av kvartshaltigt material (vid slipning, borrning, bilning av betong etc) är försedd med punktutsug eller liknande så att damm inte sprids.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck58">
+                  <label class="form-check-label" for="defaultCheck58">
+                    <p>Hanteringen av kvartshaltigt material är isolerat från annat arbete på arbetsplatsen och spridningen av dammet begränsas genom vattenbegjutning.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck59">
+                  <label class="form-check-label" for="defaultCheck59">
+                    <p>Andningsskydd typ halvmask med filter P3 används vid dammande arbeten.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Damm</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck60">
+                  <label class="form-check-label" for="defaultCheck60">
+                    <p>Dammande arbeten förekommer ej.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck61">
+                  <label class="form-check-label" for="defaultCheck61">
+                    <p>Punktutsug används vid dammande arbeten.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck62">
+                  <label class="form-check-label" for="defaultCheck62">
+                    <p>Andningsskydd typ halvmask med filter P3 används vid dammande arbeten.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck63">
+                  <label class="form-check-label" for="defaultCheck63">
+                    <p>Dammande arbeten har samordnats med övriga arbeten.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck64">
+                  <label class="form-check-label" for="defaultCheck64">
+                    <p>Städning av lokaler där dammande arbeten pågått sker varje vecka.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Härdplaster</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck65">
+                  <label class="form-check-label" for="defaultCheck65">
+                    <p>Arbete med härdplaster förekommer ej.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck66">
+                  <label class="form-check-label" for="defaultCheck66">
+                    <p>Personal som arbetar med härdplast har genomgått den utbildning som krävs för arbetet.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Särskilda tekniska eller organisatoriska säkerhetsåtgärder</h3>
+                <p>Rutiner finns för hur ej dokumenterat men misstänkt farligt material som påträffas skall hanteras.<br>
+                  Berörda arbetstagare informeras om hälso- och olycksfallsrisker som är förbundna med de material och ämnen som hanteras och hur dessa risker ska förebyggas.<br>
+                  Säkerhetsdatablad för alla kemiska ämnen som används på arbetsplatsen finns på platskontoret.<br>
+                  Det finns dokumenterade hanterings- och skyddsinstruktioner för arbete på arbetsplatsen som kan medföra exponering av farliga kemiska ämnen. BAS-U har samordnat dessa arbeten så att spridningsrisken minimeras så långt det går.<br>
+                  De personer som utför sådant arbete eller hanterar sådant material som kräver medicinska kontroller kan uppvisa intyg på genomgången kontroll.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck67">
+                  <label class="form-check-label" for="defaultCheck67">
+                    <p>Berörda arbetstagare är informerade om vilka arbetsmoment som endast får utföras av behöriga företag.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck68">
+                  <label class="form-check-label" for="defaultCheck68">
+                    <p>Behöriga företags tillstånd och arbetstagares utbildningsintyg samt övrig för arbetet föreskriven dokumentation är kontrollerade.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck69">
+                  <label class="form-check-label" for="defaultCheck69">
+                    <p>Samordning med närliggande verksamheter har utförts.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck70">
+                  <label class="form-check-label" for="defaultCheck70">
+                    <p>Delar av arbetet har förlagts till andra tider än ordinarie arbetstid för att minska antalet personer verksamma på arbetsplatsen.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck71">
+                  <label class="form-check-label" for="defaultCheck71">
+                    <p>Det finns en beredskapsplan för eventuella olyckor med kemiska ämnen.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <!-- Risk 4-->
+          <div class="container bg-white child" id="risk4_text" style="display:none;">
+            <h2>4. Åtgärder mot exponering för joniserande strålning</h2>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8 h-auto"><input type="text" id="A" placeholder=" "></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1987:2, AFS 1999:3 samt Arbetsmiljöverkets informationssida på internet.</em></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förundersökningar</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck72">
+                  <label class="form-check-label" for="defaultCheck72">
+                    <p>Ej aktuellt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck73">
+                  <label class="form-check-label" for="defaultCheck73">
+                    <p>Förundersökning av strålningsnivåer har genomförts.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck74">
+                  <label class="form-check-label" for="defaultCheck74">
+                    <p>Radonhalt är uppmätt.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Särskilda tekniska eller organisatoriska säkerhetsåtgärder</h3>
+                <p>Berörda arbetstagare informeras om hälso- och olycksfallsrisker som är förbundna med de material, ämnen och maskiner som hanteras och hur dessa risker ska förebyggas. Särskilda samordningsåtgärder för att förhindra spridning av riskerna ska vidtas.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck75">
+                  <label class="form-check-label" for="defaultCheck75">
+                    <p>Det finns säkra förvaringsmöjligheter för mätapparatur som avger joniserande strålning.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck76">
+                  <label class="form-check-label" for="defaultCheck76">
+                    <p>Särskilda regler för användandet av mätapparatur som avger joniserande strålning finns dokumenterade.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <!-- Risk 5-->
+          <div class="container bg-white child" id="risk5_text" style="display:none;">
+            <h2>5. Åtgärder mot risk vid arbete i närheten av högspänningsledning</h2>
+            
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8 h-auto"><input type="text" id="A" placeholder=" "></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3 samt Arbetsmiljöverkets informationssida på internet.</em></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förundersökningar</h3>
+                <p>Ledningsägare och kontaktperson:</p>
+                  <div class="input-group">
+                    <input type="text" class="form-control col-4" placeholder="Företag">
+                    <input type="text" class="form-control col-4" placeholder="Namn">
+                    <input type="text" class="form-control col-4" placeholder="Telefonnummer">
+                  </div><br>
+                <p>Undersökning av högspänningsledningars placering inom planerat byggnadsområde har gjorts.<br>
+                  Underlag i form av kartor och ritningar har begärts av ledningsägare.<br>
+                  Ledningsanvisning med märkning av spänningsförande ledning/ar har begärts.<br>
+                  Högspänningsledningens/ledningarnas exakta läge har dokumenterats i karta som finns på arbetsplatsen.<br>
+                  Berörda entreprenörer har informerats om högspänningsledningen/ledningarna.<br>
+                  Säkerhetsavstånd är fastställda och dokumenterade: <input type="text" placeholder="Ange säkerhetsavstånd" style="width: 150px;"></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Transporter</h3>
+                <p>Sträckning av tillfarts- och förbindelseleder är utförd för att förhindra risk för påkörning av ledningar, fundament och stolpar.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck77">
+                  <label class="form-check-label" for="defaultCheck77">
+                    <p>Fysiska barriärer används för att förhindra maskiner från att få kontakt med ledning.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Arbete - metoder och utrustning</h3>
+                <p>Endast handschakt får göras i närheten av ledning i mark.<br>
+                  Arbete inom säkerhetsavstånd får inte bedrivas som ensamarbete.<br>
+                  Fasta byggkranar har placerats på nödvändigt avstånd från högspänningledningar.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck78">
+                  <label class="form-check-label" for="defaultCheck78">
+                    <p>Alternativa lyftanordningar används.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck79">
+                  <label class="form-check-label" for="defaultCheck79">
+                    <p>Speciella arbetsmetoder tillämpas för arbete under spänningsförande ledning.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck80">
+                  <label class="form-check-label" for="defaultCheck80">
+                    <p>Sprängning och krossning av stenmaterial görs på behörigt avstånd från ledningar.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck81">
+                  <label class="form-check-label" for="defaultCheck81">
+                    <p>Ifråga om elkablar och elektrisk utrustning på arbetsplatsen gäller att dessa ska skyddas mot mekanisk åverkan och kontrolleras löpande, huvudströmbrytare ska märkas ut med skylt, kabelrullar ska vara utrustade med värmeskydd, luftledningar ska lämna tillräckligt utrymme för passage undertill samt för kranarbete.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck82">
+                  <label class="form-check-label" for="defaultCheck82">
+                    <p>För varje arbete där det finns elektrisk fara ska det finnas en särskild elsäkerhetsplanering.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck83">
+                  <label class="form-check-label" for="defaultCheck83">
+                    <p>Vid arbete intill spårområde har särskilda åtgärder vidtagits i form av angivna åtgärder nedan.</p>
+                  </label>
+                  <div class="form-group">
+                    <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Särskilda tekniska eller organisatoriska säkerhetsåtgärder</h3>
+                <p>Etableringen är gjord i samråd med ledningsägare.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck84">
+                  <label class="form-check-label" for="defaultCheck84">
+                    <p>Högspänningsledningar skall flyttas – ansökan om flyttning av kraftledning har gjorts hos ledningsägare.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck85">
+                  <label class="form-check-label" for="defaultCheck85">
+                    <p>Högspänningsledningar skall göras spänningslösa vid arbete - ansökan om frånkoppling av kraftledning har gjorts hos ledningsägare.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <!-- Risk 6 -->
+          <div class="container bg-white child" id="risk6_text" style="display:none;">
+            <h2>6. Åtgärder vid arbete med risk för drunkning</h2>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8 h-auto"><input type="text" id="A" placeholder=" "></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3, AFS 2010:16 samt Arbetsmiljöverkets informationssida.</em></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förberedande åtgärder; produktionsmetoder och material</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck86">
+                  <label class="form-check-label" for="defaultCheck86">
+                    <p>Ej aktuellt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck87">
+                  <label class="form-check-label" for="defaultCheck87">
+                    <p>Användning av prefabricerade byggnadsdelar som minskar behovet av arbete nära vatten.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck88">
+                  <label class="form-check-label" for="defaultCheck88">
+                    <p>Fästanordningar för skyddsräcken, skyddsnät etc.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck89">
+                  <label class="form-check-label" for="defaultCheck89">
+                    <p>Fästanordningar för fasta stegar eller andra möjligheter för en nödställd att lätt ta sig upp.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förberedande åtgärder; produktionsmetoder och material</h3>
+                <p>Schakt eller öppningar i mark, fasad och bjälklag, etc. spärras av med skyddsräcke. </p>
+                  <div class="form-group" style="margin-top: -9px; margin-bottom: 5px;">
+                    <textarea class="form-control col" rows="1" placeholder="Ange fabrikat" style="font-size: 9pt;"></textarea>
+                  </div>
+                  <p>Flytväst är obligatorisk vid arbete på, ovanför eller i anslutning till vatten.<br>
+                  Räddningsutrustning finns på arbetsplatsen.<br>
+                  Skyddsnät, nedfallskärmar eller andra åtgärder mot ras eller fall har vidtagits.</p>
+                  <div class="form-group" style="margin-top: -9px; margin-bottom: 5px;">
+                    <textarea class="form-control col" rows="1" placeholder="Ange fabrikat" style="font-size: 9pt;"></textarea>
+                  </div>
+                  <p>Anordningar för säker nedstigning i och uppstigning ur vattnet finns vid arbetsplatsen.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck90">
+                  <label class="form-check-label" for="defaultCheck90">
+                    <p>Halkförebyggande åtgärder har vidtagits och anges nedan.</p>
+                  </label>
+                  <div class="form-group">
+                    <textarea class="form-control col" rows="1" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                  </div>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck91">
+                  <label class="form-check-label" for="defaultCheck91">
+                    <p>Arbete vintertid kräver specifik utrustning som angivits nedan.</p>
+                  </label>
+                  <div class="form-group">
+                    <textarea class="form-control col" rows="1" placeholder="Ange specifik utrustning" style="font-size: 9pt;"></textarea>
+                  </div>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck92">
+                  <label class="form-check-label" for="defaultCheck92">
+                    <p>Vid användning av personlig fallskyddsutrustning gäller samma regler som under Risk 1 (Åtgärder mot risk för fall till lägre nivå där nivåskillnaden är två meter eller mer) om åtgärder mot fallrisker.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förberedande åtgärder; produktionsmetoder och material</h3>
+                <p>Rutiner och anordningar för säker bärgning av nödställd ur vattnet finns på arbetsplatsen.<br>
+                  Rutiner finns framtagna för nödsituation och olycka.<br>
+                  Ensamarbete får inte förekomma vid arbete med risk för drunkning.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck93">
+                  <label class="form-check-label" for="defaultCheck93">
+                    <p>Livbåt och förtöjningsplats för livbåt finns.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <!-- Risk 7 -->
+          <div class="container bg-white child" id="risk7_text" style="display:none;">
+            <h2>7. Åtgärder vid arbete i brunnar eller tunnlar samt anläggningsarbete under jord</h2>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8 h-auto"><input type="text" id="A" placeholder="Exempel: Risk att begravas under jordmassor, sjunka ned i lös mark, eller drunkna. Risk för otillräcklig ventilation för t ex avgaser, läckage gas och/eller brist syre. Risk för högt lufttryck."></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3, AFS 2010:1, AFS 2011:18 samt Arbetsmiljöverkets informationssida på internet.</em></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förberedande åtgärder</h3>
+                <p>Geoteknisk undersökning har genomförts och finns på platskontoret.<br>
+                  Erforderligt arbetsutrymme finns för personalen.<br>
+                  Mätning av radonhalt har utförts.<br>
+                  Erforderliga utrymningsvägar finns.<br>
+                  Nödvändiga förstärkningar av tak och väggar har utförts.<br>
+                  Materialupplag, parkering och transportvägar är planerade utifrån brandrisker och utrymningsplaner.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck94">
+                  <label class="form-check-label" for="defaultCheck94">
+                    <p>Det finns en räddningskammare.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Arbete - metoder och utrustning</h3>
+                <p>Enbart dieseldrivna motorer får användas under jord. Fordonens avgasrening undersöks regelbundet.<br>
+                  Vid stationära arbeten väljs i första hand eldrivna maskiner. Om en lastbil till exempel har en kran som används regelbundet bör denna kunna ställas om till eldrift när den används stationärt.<br>
+                  Utrustning för att mäta syrehalt och luftkvalitet används, instrument kontrollerades senast <input type="date" style="width: 150px;"></p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck95">
+                  <label class="form-check-label" for="defaultCheck95">
+                    <p>Arbetsrotation utförs och tiden för varje arbetstagare är begränsad till <input type="time" style="width: 80px;"></p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck96">
+                  <label class="form-check-label" for="defaultCheck96">
+                    <p>Flyktmasker i tillräckligt antal finns i underjordiskt utrymme.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck97">
+                  <label class="form-check-label" for="defaultCheck97">
+                    <p>Hyttfilter används i vissa arbetsfordon <input type="text" placeholder="Ange vilka" style="width: 300px;"></p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck98">
+                  <label class="form-check-label" for="defaultCheck98">
+                    <p>Gräv- och lastmaskiner som används för uppröjning har försetts med extra skyddande glas och förstärkt tak.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck99">
+                  <label class="form-check-label" for="defaultCheck99">
+                    <p>Kontroller och rensning av berg utförs av personal med särskild kompetens.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck100">
+                  <label class="form-check-label" for="defaultCheck100">
+                    <p>Alla fordon är försedda med brandsläckningsutrustning.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck101">
+                  <label class="form-check-label" for="defaultCheck101">
+                    <p>Dammreducerande åtgärder vidtas.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Transporter</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck102">
+                  <label class="form-check-label" for="defaultCheck102">
+                    <p>Det har vidtagits åtgärder för att stabilisera omgivande mark eller berg.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck103">
+                  <label class="form-check-label" for="defaultCheck103">
+                    <p>Omgivande mark har undersökts avseende bärighet för tung utrustning.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck104">
+                  <label class="form-check-label" for="defaultCheck104">
+                    <p>Risk för nedrasande material är förebyggd.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck105">
+                  <label class="form-check-label" for="defaultCheck105">
+                    <p>Trafikavstängning ska ske vid arbete i befintliga brunnar i gatan. Området ska spärras av så att fordon inte av misstag utsätter personalen för risk.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Särskilda tekniska eller organisatoriska säkerhetsåtgärder</h3>
+                <p>Det finns ett system som talar om vilka som befinner sig i underjordiskt utrymme och var.<br>
+                  Det finns en utrymningsplan.<br>
+                  Nya arbetstagare får ej påbörja underjordsarbete utan att genomgått säkerhetsintroduktion.<br>
+                  Ventilationen har anpassats för att de hygieniska gränsvärdena inte skall överskridas.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck106">
+                  <label class="form-check-label" for="defaultCheck106">
+                    <p>Det finns rutiner som visar när andningsskydd eller tryckluftsutrustning skall användas.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck107">
+                  <label class="form-check-label" for="defaultCheck107">
+                    <p>Utrymningsövningar genomförs <input type="text" placeholder="Ange hur ofta" style="width: 300px;"></p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck108">
+                  <label class="form-check-label" for="defaultCheck108">
+                    <p>Förvaringsplatser för brandfarligt material samt fordons bränslesystem kontrolleras <input type="text" placeholder="Ange hur ofta" style="width: 300px;"></p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck109">
+                  <label class="form-check-label" for="defaultCheck109">
+                    <p>Resurser för länspumpning finns på arbetsplatsen.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck110">
+                  <label class="form-check-label" for="defaultCheck110">
+                    <p>Underjordsarbeten har samordnats med den lokala räddningstjänsten.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <!-- Risk 8-->
+          <div class="container bg-white child" id="risk8_text" style="display:none;">
+            <h2>8. Åtgärder vid dykeriarbete</h2>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8 h-auto"><input type="text" id="A" placeholder=" "></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3, AFS 2010:16 samt Arbetsmiljöverkets informationssida.</em></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förberedande åtgärder; produktionsmetoder och material</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck111">
+                  <label class="form-check-label" for="defaultCheck111">
+                    <p>Ej aktuellt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck112">
+                  <label class="form-check-label" for="defaultCheck112">
+                    <p>Användning av prefabricerade byggnadsdelar som minskar behovet av arbete i vatten.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förundersökningar</h3>
+                <p>Undersökning har gjorts avseende strömförhållanden och förekomst av dykhinder t.ex. fartygstrafik eller sjunktimmer på arbetsplatsen.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Arbete - metoder och utrustning</h3>
+                <p>Anlitat företag/personal för arbetets utförande innehar dykarcertifikat som motsvarar det svenska yrkesdykarcertifikatet.<br>
+                  Dyklaget består av minst tre personer: dykarledare, dykare och reservdykare.<br>
+                  Anordningar för säker nedstigning och uppstigning ur vattnet finns på dykplatsen.<br>
+                  Utrustning för första hjälpen finns på dykplats.<br>
+                  Anordningar för säker bärgning av nödställd ur vattnet finns på arbetsplatsen.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck113">
+                  <label class="form-check-label" for="defaultCheck113">
+                    <p>Livbåt och förtöjningsplats för livbåt finns.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Särskilda tekniska eller organisatoriska säkerhetsåtgärder</h3>
+                <p>Rutiner finns för inskränkning av dykning under vissa förhållanden (väder, ström, is, vattenreglering m.m.).<br>
+                  Rutiner finns för nödsituation och olycka.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck114">
+                  <label class="form-check-label" for="defaultCheck114">
+                    <p>Tryckkammare kan nås inom 4 timmar.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck115">
+                  <label class="form-check-label" for="defaultCheck115">
+                    <p>Dykeriarbeten har samordnats med den lokala räddningstjänsten.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <!-- Risk 9-->
+          <div class="container bg-white child" id="risk9_text" style="display:none;">
+            <h2>9. Åtgärder vid arbete i kassun</h2>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8 h-auto"><input type="text" id="A" placeholder=" "></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3 samt Arbetsmiljöverkets informationssida på internet.</em></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förundersökningar</h3>
+                <p>Geoteknisk undersökning är genomförd och finns på platskontoret.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck116">
+                  <label class="form-check-label" for="defaultCheck116">
+                    <p>Genomgång av ritningar är genomförd, t.ex. sträckning av tillfarts- och förbindelseleder.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förundersökningar</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck117">
+                  <label class="form-check-label" for="defaultCheck117">
+                    <p>Ej aktuellt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck118">
+                  <label class="form-check-label" for="defaultCheck118">
+                    <p>Tryckkammare kan nås inom 4 timmar.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck119">
+                  <label class="form-check-label" for="defaultCheck119">
+                    <p>Dokumenterade rutiner finns framtagna för nödsituation och olycka.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck120">
+                  <label class="form-check-label" for="defaultCheck120">
+                    <p>Det finns dokumenterade rutiner för hur in- och utträde ur kassun skall genomföras.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck121">
+                  <label class="form-check-label" for="defaultCheck121">
+                    <p>Kapacitet för att pumpa undan inträngande vatten finns.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <!-- Risk 10-->
+          <div class="container bg-white child" id="risk10_text" style="display:none;">
+            <h2>10. Åtgärder vid sprängningsarbete</h2>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8 h-auto"><input type="text" id="A" placeholder="Exempel: Risk för stenkast, dolor (både vid borrning samt lastning), obehöriga inom avspärrat område, spränggaser (i underjordsmiljö)."></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3, AFS 2007:01 samt Arbetsmiljöverkets informationssida på internet.</em></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förberedande åtgärder; produktionsmetoder och material</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck122">
+                  <label class="form-check-label" for="defaultCheck122">
+                    <p>Ej aktuellt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck123">
+                  <label class="form-check-label" for="defaultCheck123">
+                    <p>Byggobjektet har placerats så att sprängning elimineras eller minskas.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förundersökningar</h3>
+                <p>Besiktning av angränsande byggnader har gjorts.<br>
+                  Undersökning av sträckning för ledningar i mark har genomförts.<br>
+                  Sprängladdningen har anpassats till kringliggande fastigheter och byggnader.<br>
+                  Geoteknisk undersökning har genomförts.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck124">
+                  <label class="form-check-label" for="defaultCheck124">
+                    <p>Samråd har skett med ägare av kraftledning i närheten av arbetsplatsen.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck125">
+                  <label class="form-check-label" for="defaultCheck125">
+                    <p>Vibrationsmätare har satts upp på angränsande byggnader.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck126">
+                  <label class="form-check-label" for="defaultCheck126">
+                    <p>Ett säkerhetsavstånd på <input type="text" placeholder="XX" style="width: 30px;"> meter till kringliggande fastigheter och byggnader har beslutats.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Arbete - metoder och utrustning</h3>
+                <p>Berörda arbetstagare är informerade om riskerna vid sprängning och hur utrymning av arbetsområde skall ske innan sprängning, var det är tillåtet att uppehålla sig under sprängning samt hur återgång till arbetsområde efter sprängning skall genomföras.<br>
+                  Berörda arbetstagare har informerats hur de skall agera om icke detonerat sprängmedel påträffas. Kontaktperson är:</p>
+                  <div class="input-group">
+                    <input type="text" class="form-control col-4" placeholder="Företagsnamn">
+                    <input type="text" class="form-control col-4" placeholder="Ange namn">
+                    <input type="text" class="form-control col-4" placeholder="Ange telefonnummer">
+                  </div><br>
+                <p>Sprängning och hantering av sprängämnen får endast utföras av behörigt företag. Kontaktperson är: </p>
+                  <div class="input-group">
+                    <input type="text" class="form-control col-4" placeholder="Företagsnamn">
+                    <input type="text" class="form-control col-4" placeholder="Ange namn">
+                    <input type="text" class="form-control col-4" placeholder="Ange telefonnummer">
+                  </div><br>
+                <p>Behöriga företags tillstånd är kontrollerade.<br>
+                  Sprängarbas är utsedd.<br>
+                  En sprängplan över hur sprängarbetet skall utföras upprättas för varje sprängobjekt innan sprängarbetet utförs.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck127">
+                  <label class="form-check-label" for="defaultCheck127">
+                    <p>Utrustning för att mäta luftkvalitet används, instrument kontrollerades senast <input type="date" style="width: 150px;"></p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck128">
+                  <label class="form-check-label" for="defaultCheck128">
+                    <p>Gräv- och lastmaskiner som används för uppröjning har försetts med extra skyddande glas.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck129">
+                  <label class="form-check-label" for="defaultCheck129">
+                    <p>Sprängområdet täcks i samband med sprängning.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Särskilda tekniska eller organisatoriska säkerhetsåtgärder</h3>
+                <p>Polistillstånd finns för förvaring och transport av sprängämnen.<br>
+                  Sprängning samordnas med andra närliggande verksamheter.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck130">
+                  <label class="form-check-label" for="defaultCheck130">
+                    <p>En borrplan finns framtagen.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck131">
+                  <label class="form-check-label" for="defaultCheck131">
+                    <p>Nödvändiga avstånd mellan pågående borrning av spränghål och övriga arbeten är dokumenterade och kommunicerade.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck132">
+                  <label class="form-check-label" for="defaultCheck132">
+                    <p>Det finns anvisningar om begränsningar i tiden då sprängning får utföras. <input type="text" placeholder="Ange tider" style="width: 150px;"></p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <!-- Risk 11-->
+          <div class="container bg-white child" id="risk11_text" style="display:none;">
+            <h2>11. Åtgärder vid arbete med tunga element</h2>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8 h-auto"><input type="text" id="A" placeholder="Exempel: Lastning, lossning, montering och demontering av tunga byggelement, läggning av tunga stenplattor etc."></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3, AFS 2003:6, AFS 2006:6, ADI 583 samt Arbetsmiljöverkets informationssida på internet.</em></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förundersökningar</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck133">
+                  <label class="form-check-label" for="defaultCheck133">
+                    <p>Ej aktuellt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck134">
+                  <label class="form-check-label" for="defaultCheck134">
+                    <p>Plats för uppställning av lyftanordning har undersökts avseende svängradie, markens bärighet och planhet, samt närliggande verksamheter eller byggnader/konstruktioner/maskiner.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck135">
+                  <label class="form-check-label" for="defaultCheck135">
+                    <p>Dokumentation över beräkning av vikter och lyftpunkter finns på platskontoret.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck136">
+                  <label class="form-check-label" for="defaultCheck136">
+                    <p>Platsen för uppställning av lyftanordning finns angiven på APD-planen.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck137">
+                  <label class="form-check-label" for="defaultCheck137">
+                    <p>Infästningar för lyft och montage är undersökta.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Arbete - metoder och utrustning</h3>
+                <p>Riskområde vid lyft är tydligt avspärrat och skyltat eller på annat sätt säkerställt så att personer inte kan komma in i området. Lyftanordningar och lyftredskap ska utöver föreskrivna besiktningar genomgå regelbundna kontroller.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck138">
+                  <label class="form-check-label" for="defaultCheck138">
+                    <p>Vid användning av mer än en kran ska varje kran ha en egen radiokanal.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Transporter</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck139">
+                  <label class="form-check-label" for="defaultCheck139">
+                    <p>Ej aktuellt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck140">
+                  <label class="form-check-label" for="defaultCheck140">
+                    <p>Plats för elementens mottagning – Se APD-plan.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck141">
+                  <label class="form-check-label" for="defaultCheck141">
+                    <p>Plats för elementens lagring – Se APD-plan.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck142">
+                  <label class="form-check-label" for="defaultCheck142">
+                    <p>Vid lossning från lastbilar är kontroller gjorda avseende kompetens hos resp. förare och fallskyddsåtgärder är vidtagna mot risk för fall från lastbilen.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Särskilda tekniska eller organisatoriska säkerhetsåtgärder</h3>
+                <p>En daterad och underskriven montageplan är upprättad och finns på platskontoret innehållande:
+                  <ol type="A">
+                    <li>En beskrivning av projektet med information om vem som är totalansvarig för montaget respektive ansvarig för olika delar i montaget. Det ska även finnas uppgifter om olika leverantörer och kontaktpersoner.</li>
+                    <li>En beskrivning av montageplatsen med beskrivning av avspärrningar, upplagsplatser, transporter etc. Uppställningsplats för fordon måste vara plan så att fordonet inkl. ev släp inte lutar och riskerar rasa.</li>
+                    <li>En angivning av elementens montageordning, märkning på element och dess vikt.</li>
+                    <li>Beskrivning av lyft. Allt ifrån ingjutningsdon, hur elementen får lyftas till val av lyftutrustning för olika element.</li>
+                    <li>Beskrivning av hur lyftutrustning ska kontrolleras, vilka som får utföra koppling och som har dokumenterad utbildning.</li>
+                    <li>Detaljerad beskrivning av hur montaget ska utföras.</li>
+                    <li>Stabiliserande åtgärder av den tillfälliga konstruktionen.</li>
+                    <li>Hur mellanlagring av element får göras och var det är möjligt.</li>
+                    <li>Aktuellt montageutförande sker på ett för samtliga inblandade arbetstagare förståeligt språk så att de kan kommunicera och förstå varandra utan risk för missförstånd.</li>
+                    <li>Vem som upprättat och godkänt montageplanen såsom ansvarig konstruktör och ansvarig montageledare samt deras kontaktuppgifter.</li>
+                  </ol></p>
+                  <p>Arbetet får påbörjas och utföras endast under ledning av kompetent person med utbildningsbevis t ex Säkra lyft, Körbevis lyftanordning.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck143">
+                  <label class="form-check-label" for="defaultCheck143">
+                    <p>Innan lyft skall kapaciteten för lyftanordning kontrolleras mot elementets tyngd och aktuellt lyftfall.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck144">
+                  <label class="form-check-label" for="defaultCheck144">
+                    <p>Berörda arbetstagare är informerade om inskränkning av lyft under väderförhållanden som äventyrar säkerheten.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck145">
+                  <label class="form-check-label" for="defaultCheck145">
+                    <p>Lyftsamordnare, lastkopplare och signalman finns utsedd.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck146">
+                  <label class="form-check-label" for="defaultCheck146">
+                    <p>Det finns tekniska eller organisatoriska åtgärder som säkerställer lyft eller begränsar att personer kommer in i särskilda riskområden.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck147">
+                  <label class="form-check-label" for="defaultCheck147">
+                    <p>Samordning med intilliggande verksamheter görs med t.ex. radiokommunikation och andra regelbundna kontakter för att förhindra krockar.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <!-- Risk 12-->
+          <div class="container bg-white child" id="risk12_text" style="display:none;">
+            <h2>12. Åtgärder vid passerande fordonstrafik</h2>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8 h-auto"><input type="text" id="A" placeholder="Exempel: Påkörningsrisker avseende passerande fordon vid bygg-, mark-, väg- och spårarbete såväl inom arbetsplatsen (vid leveranser, markarbeten etc) som utanför arbetsplatsen (persontrafik på allmän väg)."></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3, ADI 539, Arbetsmiljöverkets informationssida på internet samt Trafikverkets hjälpverktyg för BAS-P och särskilda regler om arbete på väg och järnväg enligt deras informationssidor på internet.</em></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förberedande åtgärder avseende transporter och arbete</h3>
+                <p>Transportvägar inom arbetsplatsen har planerats så att backning av fordon kan undvikas, se ADP-planen.<br>
+                  Uppställningsplats för maskiner har planerats så att räddningsfordon kan ta sig fram, se ADP-planen.<br>
+                  Fordon som används på arbetsplatsen ska vara behörigen besiktigade och godkända.<br>
+                  Undersökning av riskreducerande åtgärder för att minska påkörningsrisken av trafik utanför arbetsplatsen genom ev. trafikomläggning eller avstängning av gata/väg har genomförts.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck148">
+                  <label class="form-check-label" for="defaultCheck148">
+                    <p>Gångvägarna inom arbetsplatsen har tydligt skiljts från transportvägarna, se ADP-planen.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck149">
+                  <label class="form-check-label" for="defaultCheck149">
+                    <p>Byggobjektet har placerats för att minimera eller eliminera arbete nära passerande fordonstrafik.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck150">
+                  <label class="form-check-label" for="defaultCheck150">
+                    <p>Trafiken inom arbetsplatsen har skiljts från arbetet med trafikhinder enligt APD-planen.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck151">
+                  <label class="form-check-label" for="defaultCheck151">
+                    <p>Vid skyddsronder kontrolleras även skicket hos de fordon som används på arbetsplatsen.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck152">
+                  <label class="form-check-label" for="defaultCheck152">
+                    <p>Regelbundna kontroller av giltigt körkort sker hos förarna till de fordon som används på arbetsplatsen.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Trafikanordningsplan/Tillstånd</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck153">
+                  <label class="form-check-label" for="defaultCheck153">
+                    <p>Ej aktuellt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck154">
+                  <label class="form-check-label" for="defaultCheck154">
+                    <p>Ansökan om godkännande av trafikanordningsplan (TA-plan) har gjorts.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck155">
+                  <label class="form-check-label" for="defaultCheck155">
+                    <p>Det finns en upprättad och godkänd trafikanordningsplan (TA-plan) som beskriver arbetsplatsen med skyddsbarriärer, hastighetsbegränsning, trafikskyltar och angivna avstånd samt ev. trafikomläggning eller avstängning av gata/väg.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Arbete - metoder och utrustning</h3>
+                <p>Alla reparations- och underhållsarbeten på spår och väg påbörjas och leds av en person med särskild kunskap.
+                  Fordon ska vara utrustade med akustisk varning som startas när fordonet backar.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Särskilda tekniska eller organisatoriska säkerhetsåtgärder</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck153">
+                  <label class="form-check-label" for="defaultCheck153">
+                    <p>Ej aktuellt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck154">
+                  <label class="form-check-label" for="defaultCheck154">
+                    <p>Trafiken leds om så att fordonen inte passerar arbetsområdet, ansökan om trafikomläggning har gjorts.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck155">
+                  <label class="form-check-label" for="defaultCheck155">
+                    <p>Trafiken leds om så att fordonen passerar på betryggande avstånd, ansökan om trafikomläggning har gjorts.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck156">
+                  <label class="form-check-label" for="defaultCheck156">
+                    <p>Trafiken dirigeras med trafiksignaler eller signalvakt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck157">
+                  <label class="form-check-label" for="defaultCheck157">
+                    <p>Hastigheten sänks vid arbetsplatsen genom skyltar och/eller hastighetsdämpande åtgärder, ansökan om hastighetsbegränsning har gjorts.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck158">
+                  <label class="form-check-label" for="defaultCheck158">
+                    <p>Gata/väg stängs av, ansökan om trafikavstängning har gjorts.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck159">
+                  <label class="form-check-label" for="defaultCheck159">
+                    <p>Plats där personalen uppehåller sig oskyddad i omedelbar närhet till trafiken, får passerande fordon köra i högst 30 km/tim.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck160">
+                  <label class="form-check-label" for="defaultCheck160">
+                    <p>Plats där personalen uppehåller sig mer än 2,5 meter från trafiken, får passerande fordon köra i högst 50 km/tim.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck161">
+                  <label class="form-check-label" for="defaultCheck161">
+                    <p>Plats där det finns en barriär med - enligt gällande monteringsanvisning - godkänt utförande och godkänd längd som avskiljande anordning mellan passerande trafik och arbetsplatsens personal, får passerande trafik köra i högst 70 km/tim.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck162">
+                  <label class="form-check-label" for="defaultCheck162">
+                    <p>Trafikmärken är utplacerade för att uppmärksamma passerande fordonstrafik på pågående arbeten.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck163">
+                  <label class="form-check-label" for="defaultCheck163">
+                    <p>Berörda arbetstagare uppfyller de särskilda krav som ställs av kommun, Trafikverket eller Transportstyrelsen, eller annan beställare för att arbeta på väg eller spår.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <!-- Risk 13-->
+          <div class="container bg-white child" id="risk13_text" style="display:none;">
+            <h2>13. Åtgärder vid rivningsarbeten</h2>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8 h-auto"><input type="text" id="A" placeholder="Exempel: Påkörningsrisker avseende passerande fordon vid bygg-, mark-, väg- och spårarbete såväl inom arbetsplatsen (vid leveranser, markarbeten etc) som utanför arbetsplatsen (persontrafik på allmän väg)."></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3, AFS 2006:1, AFS: 2011:18 samt Arbetsmiljöverkets informationssida på internet.</em></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card" id="OBS">
+              <div class="card-body border rounded">
+                <strong class="card-title">Viktigt att tänka på vid rivning:</strong>
+                  <p><ul>
+                    <li>Asbesthaltigt material får endast rivas, hanteras och transporteras av personal från behörigt företag som har tillstånd från Arbetsmiljöverket.</li>
+                    <li>PCB haltigt material får endast rivas, hanteras och transporteras av personal från behörigt företag.</li>
+                    <li>Stabiliteten hos det som ska rivas måste undersökas noggrant så att rätt stabiliseringsåtgärder vidtas.</li>
+                  </ul></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förundersökningar</h3>
+                <p>Installationers och ledningars sträckning i mark har undersökts. Det är fastställt vilka tidigare verksamheter som funnits i byggnaden. En rivningsbeskrivning finns framtagen som omfattar:</p>
+                <p><ul>
+                  <li>Objektets konstruktion.</li>
+                  <li>Materialinventering av objektet.</li>
+                  <li>Turordning för rivningen.</li>
+                  <li>Särskilda skydds- och stabiliseringsåtgärder i olika rivningsskeden.</li>
+                  <li>Särskilda beskrivningar avseende hälsofarliga material (asbest, PCB, blåbetong, bly, etc) för hur arbete ska utföras och hur materialet ska omhändertas säkert ur ett arbetsmiljöperspektiv.</li>
+                  <li>Arbete som kan innebära smittrisker.</li>
+                  <li>Vilken personlig skyddsutrustning som ska användas för olika arbeten.</li>
+                  <li>Beskrivning av hur arbetet ska göras för att förebygga risker kring damm, belastningsergonomi, buller och vibrationer.</li>
+                </ul></p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck164">
+                  <label class="form-check-label" for="defaultCheck164">
+                    <p>Förekomsten av mögel har undersökts.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck165">
+                  <label class="form-check-label" for="defaultCheck165">
+                    <p>Förekomsten av mikrobiologiska ämnen som kan sprida smitta såsom t ex fågelspillning har undersökts (förekommer ofta i kyrkor, under broar eller i andra skrymslen där fåglar letar sig in).</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck166">
+                  <label class="form-check-label" for="defaultCheck166">
+                    <p>Vattenlås har undersökts avseende förekomst av kvicksilver.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck167">
+                  <label class="form-check-label" for="defaultCheck167">
+                    <p>Plats för uppställning av lyftanordning har undersökts avseende på rörelsebehov, markens bärighet och planhet.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Arbete - metoder och utrustning</h3>
+                <p>Rivningsarbete får inte utföras som ensamarbete.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck168">
+                  <label class="form-check-label" for="defaultCheck168">
+                    <p>Asbesthaltigt material får endast rivas, hanteras och transporteras av personal från behörigt företag som har tillstånd från Arbetsmiljöverket. Kontaktperson på arbetsplatsen är:</p>
+                  </label>
+                </div>
+                  <div class="input-group">
+                    <input type="text" class="form-control col-4" placeholder="Företagsnamn">
+                    <input type="text" class="form-control col-4" placeholder="Ange namn">
+                    <input type="text" class="form-control col-4" placeholder="Ange telefonnummer">
+                  </div><br>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck169">
+                    <label class="form-check-label" for="defaultCheck169">
+                      <p>PCB haltigt material får endast rivas, hanteras och transporteras av personal från behörigt företag. Kontaktperson på arbetsplatsen är:</p>
+                    </label>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" class="form-control col-4" placeholder="Företagsnamn">
+                    <input type="text" class="form-control col-4" placeholder="Ange namn">
+                    <input type="text" class="form-control col-4" placeholder="Ange telefonnummer">
+                  </div><br>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck170">
+                  <label class="form-check-label" for="defaultCheck170">
+                    <p>Hälso- eller miljöfarligt material kan transporteras bort från arbetsstället utan att påverka övriga på arbetsplatsen eller tredje man.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck171">
+                  <label class="form-check-label" for="defaultCheck171">
+                    <p>Alla förpackningar innehållande hälso- eller miljöfarligt material märks tydligt upp och placeras i speciella containrar.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck172">
+                  <label class="form-check-label" for="defaultCheck172">
+                    <p>Byggmaterial eller byggdelar innehållande miljö- eller hälsopåverkande ämnen märks upp tydligt i avvaktan på rivning.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck173">
+                  <label class="form-check-label" for="defaultCheck173">
+                    <p>Innan lyft av tunga element skall kapaciteten för lyftanordning kontrolleras mot elementets tyngd och aktuellt lyftfall.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck174">
+                  <label class="form-check-label" for="defaultCheck174">
+                    <p>Berörda arbetstagare är informerade om vilken personlig skyddsutrustning som skall användas för olika arbetsmoment.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck175">
+                  <label class="form-check-label" for="defaultCheck175">
+                    <p>Berörda arbetstagare har fått nödvändig utbildning för att använda den personliga skyddsutrustning som skall användas för olika arbetsmoment.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Särskilda tekniska eller organisatoriska säkerhetsåtgärder</h3>
+                <p>Rutiner finns för hur ej dokumenterat men misstänkt material som påträffas skall hanteras.<br>
+                  Berörda arbetstagare informeras om hälso- och olycksfallsrisker som är förbundna med de material och ämnen som hanteras och hur dessa risker ska förebyggas.<br>
+                  Berörda arbetstagare är informerade om vilka arbetsmoment som endast får utföras av behöriga företag.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck176">
+                  <label class="form-check-label" for="defaultCheck176">
+                    <p>Behöriga företags tillstånd är kontrollerade.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck177">
+                  <label class="form-check-label" for="defaultCheck177">
+                    <p>Asbesthaltigt material får endast rivas, hanteras och transporteras av personal från behörigt företag som har tillstånd från Arbetsmiljöverket. Kopia av detta tillstånd med tillhörande bilagor/dokumentation ska finnas på platskontoret.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <!-- Risk 14-->
+          <div class="container bg-white child" id="risk14_text" style="display:none;">
+            <h2>14. Arbete på arbetsställe som är gemensamt med pågående ordinarie verksamhet</h2>
+
+            <h3>Skyddsrond</h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8"><input type="text" id="A" placeholder="EX: Risk för kollisioner av både människor och fordon och arbeten i sig om inte en effektiv samordning förekommre mellan bygg- eller anläggningsarbetena och den pågående ordinarie verksamheten på området."></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3.</em></td>
+                </tr>
+              </tbody>
+            </table>
+  
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Förberedande åtgärder</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck178">
+                  <label class="form-check-label" for="defaultCheck178">
+                    <p>Ej aktuellt.</p>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck179">
+                  <label class="form-check-label" for="defaultCheck179">
+                    <p>BAS-P samt även i förekommande fall redan utsedd BAS-U för bygg- eller anläggningsprojektet och samordningsansvarig för den ordinarie verksamheten på arbetsstället har i planering- och projekteringsskedet diskuterat och identifierat kritiska skärningspunkter och risker för kollisioner mellan de båda verksamheterna.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3>Särskilda tekniska eller organisatoriska säkerhetsåtgärder</h3>
+                  <p>BAS-U och samordningsansvarig för den ordinarie verksamheten på arbetsstället träffas/hörs regelbundet på bestämda mötesdagar-/tider för att diskutera löpande åtgärder mot risker för kollisioner mellan de båda verksamheterna.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <!-- Risk 15 -->
+          <div class="container bg-white child" id="risk15_text" style="display:none;">
+            <h2>15. Eventuell ytterligare risk</h2>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8 h-auto"><input type="text" id="A" placeholder=" "></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3.</em></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="6" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <!-- Risk 16 -->
+          <div class="container bg-white child" id="risk16_text" style="display:none;">
+            <h2>16. Eventuell ytterligare risk</h2>
+            
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-4">Företag</th>
+                  <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                  <td class="col-8 h-auto"><input type="text" id="A" placeholder=" "></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3.</em></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="card">
+              <div class="card-body border rounded">
+                <h3 class="card-title">Övriga åtgärder</h3>
+                <div class="form-group">
+                  <textarea class="form-control col" rows="6" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr class="d-flex">
+                  <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                  <th class="col-6">Signering BAS-U</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="d-flex">
+                  <td class="col-6"><input type="date" id="A"></td>
+                  <td class="col-6"><input type="text" id="A"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        
+
+                    <!-- Risk 17 Pågen -->
+                    <div class="container bg-white child" id="risk17_text" style="display:none;">
+                      <h2>17. ATEX-direktiven</h2>
+          
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr class="d-flex">
+                            <th class="col-4">Företag</th>
+                            <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex">
+                            <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                            <td class="col-8 h-auto"><input type="text" id="A" placeholder=" "></td>
+                          </tr>
+                          <tr class="d-flex">
+                            <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3, AFS 2010:16 samt Arbetsmiljöverkets informationssida.</em></td>
+                          </tr>
+                        </tbody>
+                      </table>
+          
+                      <div class="card">
+                        <div class="card-body border rounded">
+                          <h3>Atex-direktiven är en del av EU:s lagverk och styr kraven på utrustning och arbete i explosionsfarlig miljö. De styrande direktiven är:</h3>
+                          <p>
+                            <li><b>ATEX-direktiv 94/9/EG  även kallat (ATEX 95/100a). 
+                              Utrustning och säkerhetssystem avsedda för användning i explosionsfarliga omgivningar.</b><br>
+                              Detta direktiv styr kraven på utrustningar i explosionsfarlig miljö och är till största del riktat mot tillverkare av utrustning. Det är emellertid viktigt även för brukare att känna till vissa delar av direktivet. En kort beskrivning göres under flik 2. I svensk lagstiftning är direktivet implementerat i arbetsmiljöverkets förekrift AFS 1995:5 och elsäkerhetsverkets föreskrift ELSÄK-FS 1995:6.  AFS 1995:5 finns under denna flik.<br>
+                              <a href="http://av.se/lagochratt/afs/afs1995_05.aspx">Länk till AFS 1995:5</a>
+                            </li>
+                            <br>
+                            <li><b>ATEX-direktiv 1999/92/EG även kallat (ATEX 137)
+                              Minimikrav för att förbättra skyddet för arbetstagares säkerhet och hälsa vid risk från explosiva atmosfärer.</b><br>
+                              Detta direktiv riktar sig mest mot brukarna, dvs. de anläggningsägare som i sin verksamhet har möjlig explosiv miljö. Det är i detta direktiv kraven ställs på zonklassning och vilka krav som skall ställas för arbete i explosiv miljö. I svensk lagstiftning regleras direktivet främst av arbetsmiljöverkets föreskrift AFS 2003:3 och räddningsverkets föreskrift SRVFS 2004:7. Båda föreskrifterna finns under denna flik.<br>
+                              <a href="http://av.se/lagochratt/afs/afs2003_03.aspx">Länk till AFS 2003:3</a><br>
+                              <a href="https://www.msb.se/externdata/rs/5a42742e-7310-4a17-aea2-7ca7bc821161.pdf">Länk till SRVFS 2004:7</a>
+                            </li>
+                          </p>
+                        </div>
+                      </div>
+          
+                      <div class="card">
+                        <div class="card-body border rounded">
+                          <h3 class="card-title">Övriga åtgärder</h3>
+                          <div class="form-group">
+                            <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                          </div>
+                        </div>
+                      </div>
+          
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr class="d-flex">
+                            <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                            <th class="col-6">Signering BAS-U</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex">
+                            <td class="col-6"><input type="date" id="A"></td>
+                            <td class="col-6"><input type="text" id="A"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+          
+                    </div>
+
+                    <!-- Risk 18 -->
+                    <div class="container bg-white child" id="risk18_text" style="display:none;">
+                      <h2>18. Arbetstillstånd</h2>
+          
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr class="d-flex">
+                            <th class="col-4">Företag</th>
+                            <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex">
+                            <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                            <td class="col-8 h-auto"><input type="text" id="A" placeholder="Exempel: Risk att begravas under jordmassor, sjunka ned i lös mark, eller drunkna. Risk för otillräcklig ventilation för t ex avgaser, läckage gas och/eller brist syre. Risk för högt lufttryck."></td>
+                          </tr>
+                          <tr class="d-flex">
+                            <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3, AFS 2010:1, AFS 2011:18 samt Arbetsmiljöverkets informationssida på internet.</em></td>
+                          </tr>
+                        </tbody>
+                      </table>
+          
+                      <div class="card">
+                        <div class="card-body border rounded">
+                          <h3>Arbetstillstånd</h3>
+                          <p><li>Arbetstillstånd skall utfärdas för allt arbete i ATEX-klassat område, samt för alla ingrepp i utrustning som är zonklassade enligt ATEX.</li>
+                            
+                            <li>Beslut om arbetstillstånd krävs eller ej avgörs av produktionsansvarig.</li>
+                            
+                            <li>Arbetstillstånd utfärdas av tillståndsansvarig för heta arbeten på blankett  ”Arbetstillstånd”. Blanketten ska numreras löpande och efter avslutat arbete arkiveras tillsammans med eventuella tillstånd för heta arbeten. Förutom allmänna data om objektet och arbetsbeskrivning, skall ett antal förebyggande skyddsfunktioner beslutas och signeras efter åtgärd.</li> 
+                            
+                            <li>Innan återstart, efter arbetet är klart, skall kontroll göras att arbetsplatsen är återställd. Efter signering av tillståndsansvarig för heta arbeten kan driften återupptas.</li>
+                            </p>
+                        </div>
+                      </div>
+          
+                      <div class="card">
+                        <div class="card-body border rounded">
+                          <h3>Säkring av arbetsplatsen</h3>
+                          <p>Det finns ett antal viktiga moment som skall åtgärdas innan tillträde till objektet får ges. Beroende på arbetsuppgiften kan det vara allt ifrån enbart låst arbetsbrytare till att objektet är avblindat och rengjort.
+                             För alla aktuella moment skall ansvarig utses som signerar när arbetet är utfört. Efter arbetet är klart skall även signering ske att de olika momenten är återställda till driftläge.</p>
+                        </div>
+                      </div>
+          
+                      <div class="card">
+                        <div class="card-body border rounded">
+                          <h3>Skyddsutrustning</h3>
+                          <p>Den som utfärdar arbetstillståndet skall bedöma vilken personlig skyddsutrustning och annan skyddsutrustning som krävs för arbetets utförande.</p>
+                        </div>
+                      </div>
+          
+                      <div class="card">
+                        <div class="card-body border rounded">
+                          <h3>Tillstånd för heta arbeten</h3>
+                          <p>Utfärdas enligt särskild rutin ID- nummer 2131.</p>
+                        </div>
+                      </div>
+          
+                      <div class="card">
+                        <div class="card-body border rounded">
+                          <h3 class="card-title">Övriga åtgärder</h3>
+                          <div class="form-group">
+                            <textarea class="form-control col" rows="3" placeholder="Ange åtgärder" style="font-size: 9pt;"></textarea>
+                          </div>
+                        </div>
+                      </div>
+          
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr class="d-flex">
+                            <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                            <th class="col-6">Signering BAS-U</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex">
+                            <td class="col-6"><input type="date" id="A"></td>
+                            <td class="col-6"><input type="text" id="A"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+          
+                    </div>
+
+                    <!-- Risk 19 -->
+                    <div class="container bg-white child" id="risk19_text" style="display:none;">
+                      <h2>19. Utrymningsinstruktion Malmö</h2>
+                      
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr class="d-flex">
+                            <th class="col-4">Företag</th>
+                            <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex">
+                            <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                            <td class="col-8 h-auto"><input type="text" id="A" placeholder=" "></td>
+                          </tr>
+                          <tr class="d-flex">
+                            <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3.</em></td>
+                          </tr>
+                        </tbody>
+                      </table>
+          
+                      <div class="card">
+                        <div class="card-body border rounded">
+                          <img src="Utrymningsinstruktion Malmo.jpg" alt="Utrymningsinstruktion Malmö" width="100%" height="auto">
+                        </div>
+                      </div>
+          
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr class="d-flex">
+                            <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                            <th class="col-6">Signering BAS-U</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex">
+                            <td class="col-6"><input type="date" id="A"></td>
+                            <td class="col-6"><input type="text" id="A"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+          
+                    </div>
+
+                    <!-- Risk 20 -->
+                    <div class="container bg-white child" id="risk20_text" style="display:none;">
+                      <h2>19. Utrymningsinstruktion Lilla Harrie</h2>
+                      
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr class="d-flex">
+                            <th class="col-4">Företag</th>
+                            <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex">
+                            <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                            <td class="col-8 h-auto"><input type="text" id="A" placeholder=" "></td>
+                          </tr>
+                          <tr class="d-flex">
+                            <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3.</em></td>
+                          </tr>
+                        </tbody>
+                      </table>
+          
+                      <div class="card">
+                        <div class="card-body border rounded">
+                          <img src="Utrymningsinstruktion Harrie.jpg" alt="Utrymningsinstruktion Lilla Harrie" width="100%" height="auto">
+                        </div>
+                      </div>
+          
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr class="d-flex">
+                            <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                            <th class="col-6">Signering BAS-U</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex">
+                            <td class="col-6"><input type="date" id="A"></td>
+                            <td class="col-6"><input type="text" id="A"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+          
+                    </div>
+
+                    <!-- Risk 21 -->
+                    <div class="container bg-white child" id="risk21_text" style="display:none;">
+                      <h2>19. Utrymningsinstruktion Göteborg</h2>
+                      
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr class="d-flex">
+                            <th class="col-4">Företag</th>
+                            <th class="col-8">Arbete/aktivitet och risk(-er); Ange vad och var</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex">
+                            <td class="col-4"><input type="text" id="A" placeholder="EX: Pågen AB"></td>
+                            <td class="col-8 h-auto"><input type="text" id="A" placeholder=" "></td>
+                          </tr>
+                          <tr class="d-flex">
+                            <td class="col" id="Åtgärd"><strong>Åtgärder</strong> <em>Se även AFS 1999:3.</em></td>
+                          </tr>
+                        </tbody>
+                      </table>
+          
+                      <div class="card">
+                        <div class="card-body border rounded">
+                          <img src="Utrymningsinstruktion Goteborg.jpg" alt="Utrymningsinstruktion Göteborg" width="100%" height="auto">
+                        </div>
+                      </div>
+          
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr class="d-flex">
+                            <th class="col-6">Arbeten med ovanstående risker slutförda den:</th>
+                            <th class="col-6">Signering BAS-U</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex">
+                            <td class="col-6"><input type="date" id="A"></td>
+                            <td class="col-6"><input type="text" id="A"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+          
+                    </div>
+                  </div>
+
+        <!-- Logotyp i sidan -->
+        <div class="col-3" id="logo">
+          <div class="sticky-top">
+          <!--  <img src="pagen.png" class="img-fluid"> -->
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+
+<footer class="footer text-center">
+  <button class="btn btn-custom" style="margin: 10px;" id="print" onclick="printContent('main');" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
+    <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+    <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+  </svg> Print</button>
+  
+  <!--<button class="btn btn-custom" style="margin: 10px;" onclick={window.print()}><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
+    <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+    <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+  </svg>  Skriv ut</button>
+
+  <button class="btn btn-custom" style="margin: 10px;" onclick="printDiv('main')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
+    <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+    <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+  </svg> Skriv ut</button>-->
+</footer>
+
+</body>
+</html>
+
+<!-- För checkboxarna -->
+<script>
+  function myFunction(id) {
+    // Get the checkbox
+    var checkBox = document.getElementById(id);
+    // Get the output text
+    var text = document.getElementById(id+"_text");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+  }
+</script>
+
+<!-- För utskriftsknappen 
+<script>
+  function printDiv(divName) {
+    var printContents = document.getElementById(divName).innerHTML;
+    var originalContents = document.body.innerHTML;
+
+    document.body.innerHTML = printContents;
+
+    window.print();
+
+    document.body.innerHTML = originalContents;
+  }
+</script>-->
+
+<script>
+  function printContent(el){
+  var restorepage = $('body').html();
+  var printcontent = $('#' + el).clone();
+  var enteredtext = $('#text').val();
+  $('body').empty().html(printcontent);
+  window.print();
+  $('body').html(restorepage);
+  $('#text').html(enteredtext);
+  }
+  </script>
